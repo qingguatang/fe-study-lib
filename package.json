@@ -8,6 +8,10 @@
     "build": "webpack --mode=production",
     "lint": "eslint src"
   },
+  "dependencies": {
+    "delegate": "^3.2.0",
+    "domready": "^1.0.8"
+  },
   "devDependencies": {
     "babel-loader": "^7.1.4",
     "css-loader": "^0.28.11",
