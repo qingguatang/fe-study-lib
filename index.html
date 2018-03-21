@@ -11,6 +11,15 @@
 </head>
 <body>
   <main class="page-content">
+    <h2>使用方法</h2>
+    1. 在页面中引入以下script：
+    <pre class="code html">
+&lt;script src="https://qingguatang.github.io/fe-study-lib/dist/lib.js"&gt;&lt;/script&gt;
+    </pre>
+
+    2. 参考示例中的<strong>data-</strong>标签，其中<strong>data-widget</strong>为组件名，其它的为参数。
+
+
     <h2>Toggle示例</h2>
 
     <section class="demo toggle-demo-1">
@@ -26,6 +35,8 @@
       </ul>
     </section>
 
+    <pre class="code" data-target=".toggle-demo-1"></pre>
+
     <section class="demo toggle-demo-2">
       <button class="btn" data-widget="Toggle" data-target=".toggle-demo-2 .panel">切换</button>
       <div class="panel active">
@@ -35,7 +46,7 @@
 
     <h2>Popup示例</h2>
 
-    <section class="demo popup-demo">
+    <section class="demo popup-demo popup-demo-1">
       <div class="user-status" data-widget="Popup">
         <div class="title popup-handle">
           <span>点击我弹出菜单</span>
@@ -58,8 +69,9 @@
       </div>
     </section>
 
+    <pre class="code" data-target=".popup-demo-1"></pre>
 
-    <section class="demo popup-demo">
+    <section class="demo popup-demo popup-demo-2">
       <div class="user-status" data-widget="Popup" data-event="hover">
         <div class="title popup-handle">
           <span>移到我上面试试</span>
@@ -81,6 +93,9 @@
         </div>
       </div>
     </section>
+
+    <pre class="code" data-target=".popup-demo-2"></pre>
+
   </main>
 </body>
 </html>
