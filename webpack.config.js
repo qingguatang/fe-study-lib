@@ -10,7 +10,8 @@ const env = process.NODE_ENV;
 
 module.exports = {
   entry: {
-    p1: './src/p1'
+    p1: './src/p1',
+    demo: './demo'
   },
 
 
@@ -24,6 +25,14 @@ module.exports = {
 
   module: {
     rules: [
+      {
+        test: /\.less/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'less-loader'
+        ]
+      },
       {
         test: /\.js$/,
         use: [
