@@ -1,6 +1,7 @@
 {
   "extends": "eslint-config-bce",
   "globals": {
+    "widnow": true,
     "document": true
   }
 }
