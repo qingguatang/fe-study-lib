@@ -10,7 +10,7 @@ const env = process.NODE_ENV;
 
 module.exports = {
   entry: {
-    p1: './src',
+    lib: './src',
     demo: './demo'
   },
 
