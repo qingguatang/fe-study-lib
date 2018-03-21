@@ -1,6 +1,5 @@
 import './style.less';
 import 'highlight.js/styles/github.css';
-import hljs from 'highlight.js';
 import domready from 'domready';
 
 domready(ready);
@@ -19,7 +18,10 @@ function initCodeBlock() {
       const html = filterHTML(target.innerHTML);
       el.textContent = html;
     }
-    hljs.highlightBlock(el);
+    require.ensure(['highlight.js'], function(require) {
+      const hljs = require('highlight.js');
+      hljs.highlightBlock(el);
+    });
   });
 }
 
