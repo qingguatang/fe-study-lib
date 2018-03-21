@@ -1,0 +1,29 @@
+{
+  "name": "fe-study-lib",
+  "version": "1.0.0",
+  "description": "前端学习基础库",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server",
+    "build": "webpack --mode=production",
+    "lint": "eslint src"
+  },
+  "devDependencies": {
+    "babel-loader": "^7.1.4",
+    "eslint": "^4.19.0",
+    "eslint-config-bce": "^3.0.0",
+    "webpack": "^4.2.0",
+    "webpack-cli": "^2.0.12",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qingguatang/fe-study-lib.git"
+  },
+  "author": "bencode@163.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qingguatang/fe-study-lib/issues"
+  },
+  "homepage": "https://github.com/qingguatang/fe-study-lib#readme"
+}
