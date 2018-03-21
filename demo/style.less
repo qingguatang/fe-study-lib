@@ -15,12 +15,17 @@ ul {
 }
 
 
+.demo {
+  margin: 20px 0;
+}
+
 .page-content {
   max-width: 1190px;
   margin: 0 auto;
+  padding: 20px;
 }
 
-.interest {
+.toggle-demo-1 {
   h2 {
     color: #072;
     font-size: 16px;
@@ -40,6 +45,20 @@ ul {
         border: 1px solid #afcb9f;
         background: #d6e9c4;
       }
+    }
+  }
+}
+
+.toggle-demo-2 {
+  .panel {
+    display: none;
+    border: 1px solid #afcb9f;
+    margin-top: 10px;
+    width: 600px;
+    height: 200px;
+
+    &.active {
+      display: block;
     }
   }
 }
