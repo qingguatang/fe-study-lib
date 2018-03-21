@@ -1,4 +1,5 @@
 import domready from 'domready';
+import Popup from './widget/Popup';
 import Toggle from './widget/Toggle';
 
 /* global document */
@@ -7,6 +8,7 @@ import Toggle from './widget/Toggle';
 const doc = document;
 
 const Widgets = {
+  Popup,
   Toggle
 };
 

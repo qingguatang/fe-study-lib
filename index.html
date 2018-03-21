@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>前端学习基础库</title>
+  <script src="//at.alicdn.com/t/font_600353_sicncl532hzx5hfr.js"></script>
   <script src="./dist/p1.js"></script>
   <script src="./dist/demo.js"></script>
 </head>
@@ -29,6 +30,55 @@
       <button class="btn" data-widget="Toggle" data-target=".toggle-demo-2 .panel">切换</button>
       <div class="panel active">
         JavaScript ( JS ) 是一种具有头等函数的轻量级解释型或即时编译型的编程语言。
+      </div>
+    </section>
+
+    <h2>Popup示例</h2>
+
+    <section class="demo popup-demo">
+      <div class="user-status" data-widget="Popup">
+        <div class="title popup-handle">
+          <span>大鱼的帐号</span>
+          <svg class="popup-icon icon" aria-hidden="true">
+            <use xlink:href="#icon-unfold"></use>
+          </svg>
+          <svg class="unpopup-icon icon" aria-hidden="true">
+            <use xlink:href="#icon-packup"></use>
+          </svg>
+        </div>
+        <div class="panel">
+          <ul>
+            <li>个人主页</li>
+            <li>我的订单</li>
+            <li>我的钱包</li>
+            <li>账号管理</li>
+            <li>退出</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="demo popup-demo">
+      <div class="user-status" data-widget="Popup" data-event="hover">
+        <div class="title popup-handle">
+          <span>大鱼的帐号</span>
+          <svg class="popup-icon icon" aria-hidden="true">
+            <use xlink:href="#icon-unfold"></use>
+          </svg>
+          <svg class="unpopup-icon icon" aria-hidden="true">
+            <use xlink:href="#icon-packup"></use>
+          </svg>
+        </div>
+        <div class="panel">
+          <ul>
+            <li>个人主页</li>
+            <li>我的订单</li>
+            <li>我的钱包</li>
+            <li>账号管理</li>
+            <li>退出</li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>

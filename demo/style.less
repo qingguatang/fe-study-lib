@@ -14,9 +14,15 @@ ul {
   }
 }
 
+.icon {
+  width: 1em; height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
 
 .demo {
-  margin: 20px 0;
+  margin: 30px 0;
 }
 
 .page-content {
@@ -59,6 +65,47 @@ ul {
 
     &.active {
       display: block;
+    }
+  }
+}
+
+
+.popup-demo {
+  .user-status {
+    border: 1px solid orange;
+    position: relative;
+    width: 120px;
+
+    .title {
+      cursor: pointer;
+    }
+
+    .panel {
+      display: none;
+      position: absolute;
+      width: 120px;
+      border: 1px solid #e3e3e3;
+      margin-top: 10px;
+
+      li {
+        margin: 10px 10px;
+      }
+    }
+
+    .unpopup-icon {
+      display: none;
+    }
+
+    &.active {
+      .popup-icon {
+        display: none;
+      }
+      .unpopup-icon {
+        display: inline-block;
+      }
+      .panel {
+        display: block;
+      }
     }
   }
 }
