@@ -1,4 +1,3 @@
-import assert from 'assert';
 import delegate from 'delegate';
 import { $$ } from '../util';
 
@@ -24,8 +23,9 @@ function handleEvent(el, navSelector, paneSelector, event) {
     const target = e.delegateTarget;
     const navs = $$(el, navSelector);
     const index = navs.indexOf(target);
-    assert(index !== -1);
-
+    if (index === -1) {
+      throw new Error('assert fail');
+    }
     activeNav(navs, index);
     showPane(el, paneSelector, index);
   });
