@@ -115,3 +115,31 @@ ul {
     }
   }
 }
+
+.tab-demo {
+  max-width: 400px;
+  .tabs {
+    .nav {
+      .clearfix();
+      li {
+        float: left;
+        position: relative;
+        bottom: -1px;
+        padding: 5px 20px;
+        cursor: pointer;
+        position: relative;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border: 1px solid transparent;
+        &.active {
+          border: 1px solid #d4d4d4;
+          border-bottom: 1px solid #fff;
+        }
+      }
+    }
+    .pane {
+      padding: 20px;
+      border: 1px solid #d4d4d4;
+    }
+  }
+}

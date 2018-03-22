@@ -1,6 +1,6 @@
 import delegate from 'delegate';
 
-export default function(el, options = {}) {
+export default function Toggle(el, options = {}) {
   const event = options.event || 'click';
   const className = options.className || 'active';
   const selector = options.selector;

@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>前端教学基础库</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <link rel="stylesheet" href="./dist/github.min.css">
   <script src="//at.alicdn.com/t/font_600353_sicncl532hzx5hfr.js"></script>
-  <script src="./dist/lib.js"></script>
+  <script src="./dist/highlight.min.js"></script>
   <script src="./dist/demo.js"></script>
+  <script src="./dist/lib.js"></script>
 </head>
 <body>
   <main class="page-content">
@@ -20,7 +20,6 @@
     </pre>
 
     2. 参考示例中的<strong>data-</strong>标签，其中<strong>data-widget</strong>为组件名，其它的为参数。
-
 
     <h2>Toggle示例</h2>
 
@@ -96,7 +95,51 @@
       </div>
     </section>
 
-    <pre class="code" data-target=".popup-demo-2"></pre>
+    <pre class="code" data-target=".popup-demo-1"></pre>
+
+    <h2>Tab示例</h2>
+
+    <section class="demo tab-demo tab-demo-1">
+      <div class="tabs" data-widget="Tab">
+        <ul class="nav">
+          <li>First</li>
+          <li>Second</li>
+          <li>Third</li>
+        </ul>
+        <div class="pane">
+          First
+        </div>
+        <div class="pane">
+          Second
+        </div>
+        <div class="pane">
+          Third
+        </div>
+      </div>
+    </section>
+
+    <pre class="code" data-target=".tab-demo-1"></pre>
+
+    <section class="demo tab-demo tab-demo-2">
+      <div class="tabs" data-widget="Tab" data-active="1">
+        <ul class="nav">
+          <li>First</li>
+          <li>Second</li>
+          <li>Third</li>
+        </ul>
+        <div class="pane">
+          First
+        </div>
+        <div class="pane">
+          默认选中
+        </div>
+        <div class="pane">
+          Third
+        </div>
+      </div>
+    </section>
+
+    <pre class="code" data-target=".tab-demo-2"></pre>
 
   </main>
 </body>

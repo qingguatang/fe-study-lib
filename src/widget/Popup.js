@@ -1,7 +1,7 @@
 /* eslint no-console: 0 */
 
 
-export default function(el, options = {}) {
+export default function Popup(el, options = {}) {
   const handle = el.querySelector('.popup-handle');
   if (!handle) {
     console.error('popup handler for exist in', el);

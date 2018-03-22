@@ -9,6 +9,7 @@
     "lint": "eslint src"
   },
   "dependencies": {
+    "assert": "^1.4.1",
     "delegate": "^3.2.0",
     "domready": "^1.0.8"
   },
