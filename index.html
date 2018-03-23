@@ -19,11 +19,39 @@
 &lt;script src="https://qingguatang.github.io/fe-study-lib/dist/lib.js"&gt;&lt;/script&gt;
     </pre>
 
-    2. 参考示例中的<strong>data-</strong>标签，其中<strong>data-widget</strong>为组件名，其它的为参数。
+    2. 参考示例代码及相关的注释来了解组件的行为和使用方法 <br>
+    3. 你需要配合使用Chrome开发者工具，注意节点中class的变化来理解组件的工作原理。<br>
+    4. 注意节点中的<strong>data-</strong>标签，其中<strong>data-widget</strong>为组件名，其它的为参数。<br>
+    5. 组件的原代码在：<a href="https://github.com/qingguatang/fe-study-lib">fe-study-lib</a>。
 
     <h2>Toggle示例</h2>
 
+    <h3>示例1</h3>
+    <section class="demo toggle-demo-2">
+      <!--
+      Toggle组件： 点击元素，会自动切换目标元素的一个class, 默认class名称为`active`
+      目录元素由data-target指定，它是一个选择器。
+      状态名（也就是class名），默认为`active`, 可设置`data-class-name`属性修改。
+
+      下面的配置表示：点击按扭，会切换 `.toggle-demo-2 .panel` 元素的`active`状态。
+      然后你可以结合css，就能完成点击按扭，显示隐藏的功能。
+      -->
+      <button class="btn" data-widget="Toggle" data-target=".toggle-demo-2 .panel" data-class-name="hello">切换</button>
+      <div class="panel active">
+        JavaScript ( JS ) 是一种具有头等函数的轻量级解释型或即时编译型的编程语言。
+      </div>
+    </section>
+
+    <pre class="code" data-target=".toggle-demo-2"></pre>
+
+    <h3>示例2</h3>
     <section class="demo toggle-demo-1">
+      <!--
+      Toggle组件：可点击切称一组子元素的状态
+      子元素由选择器`data-selector`指定
+
+      下面的配置表示：点击li，会切换这个li的状态，即会添加和移除class `active`。
+      -->
       <ul class="tags" data-widget="Toggle" data-selector="li">
         <li>美食</li>
         <li>旅行</li>
@@ -38,18 +66,17 @@
 
     <pre class="code" data-target=".toggle-demo-1"></pre>
 
-    <section class="demo toggle-demo-2">
-      <button class="btn" data-widget="Toggle" data-target=".toggle-demo-2 .panel">切换</button>
-      <div class="panel active">
-        JavaScript ( JS ) 是一种具有头等函数的轻量级解释型或即时编译型的编程语言。
-      </div>
-    </section>
-
     <h2>Popup示例</h2>
 
     <section class="demo popup-demo popup-demo-1">
+      <!--
+      Popup组件: 点击 .popup-handle 元素， 会切换面板的状态。
+
+      以下配置表示：点击`.popup-handle`元素，会切换`user-status`面板的状态，
+      即添加和移除 class `active`, 然后你可以结合css来显示和隐藏菜单。
+      -->
       <div class="user-status" data-widget="Popup">
-        <div class="title popup-handle">
+        <div class="title popup-handle">  <!-- 具有popup-handle class的元素具有点击行为 -->
           <span>点击我弹出菜单</span>
           <svg class="popup-icon icon" aria-hidden="true">
             <use xlink:href="#icon-unfold"></use>
@@ -73,6 +100,11 @@
     <pre class="code" data-target=".popup-demo-1"></pre>
 
     <section class="demo popup-demo popup-demo-2">
+      <!--
+      默认是点击 `.popup-handle` 元素，会触发状态切换，
+      可以设置 `data-event="hover"`，把触发事件改成`hover`，
+      即鼠标移上去会添加active，离开会移除active
+      -->
       <div class="user-status" data-widget="Popup" data-event="hover">
         <div class="title popup-handle">
           <span>移到我上面试试</span>
@@ -95,11 +127,16 @@
       </div>
     </section>
 
-    <pre class="code" data-target=".popup-demo-1"></pre>
+    <pre class="code" data-target=".popup-demo-2"></pre>
 
     <h2>Tab示例</h2>
 
     <section class="demo tab-demo tab-demo-1">
+      <!--
+      Tabs组件：即点击tab选项，会切换显示面板内容
+      默认的tab选项，即可以点的元素为： `.nav li`
+      默认的面板为 `.pane`
+      -->
       <div class="tabs" data-widget="Tab">
         <ul class="nav">
           <li>First</li>
@@ -121,6 +158,9 @@
     <pre class="code" data-target=".tab-demo-1"></pre>
 
     <section class="demo tab-demo tab-demo-2">
+      <!--
+      使用`data-active`属性设置默认选中第几个。
+      -->
       <div class="tabs" data-widget="Tab" data-active="1">
         <ul class="nav">
           <li>First</li>
